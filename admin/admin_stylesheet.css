@@ -1,0 +1,55 @@
+﻿/* Basic reset */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background: #fff;
+  color: #111;
+}
+
+/* Logo */
+img {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Breadcrumb and headings */
+small {
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+h2 {
+  margin: 5px 0 15px;
+}
+h3 {
+  margin: 10px 0;
+}
+
+/* Table */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 15px;
+}
+.table th,
+.table td {
+  border: 1px solid #ccc;
+  padding: 6px;
+  text-align: center;
+}
+.table th {
+  background: #f0f0f0;
+}
+
+/* Buttons */
+.btn {
+  padding: 4px 8px;
+  border: 1px solid #aaa;
+  background: #eee;
+  text-decoration: none;
+  color: #000;
+  margin: 0 2px;
+}
+.btn:hover {
+  background: #ddd;
+}
