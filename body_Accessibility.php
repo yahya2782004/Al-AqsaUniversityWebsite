@@ -18,9 +18,6 @@
 
     <h2 id="a">Change Font Size</h2>
 
-
-
-
     <p>Most modern web browsers let you increase or decrease the size of page text by zooming.</p>
 
     <h3>1) Keyboard shortcuts</h3>

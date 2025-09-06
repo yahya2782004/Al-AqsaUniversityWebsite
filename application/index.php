@@ -13,6 +13,7 @@ if (array_key_exists($p, $allowed_pages)) {
 } else {
   $page_file = 'body_404.php';
 }
+
 ?>
 
 <!DOCTYPE html>

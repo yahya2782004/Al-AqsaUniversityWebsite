@@ -1,6 +1,6 @@
 <?php
 //DB connection
-require_once "../pdoConnect.php";
+require_once "../application/pdoConnect.php";
 
 // Read inputs
 $action  = $_GET['action']  ?? 'list';      // list | details | delete

@@ -341,54 +341,6 @@ summary {
     text-align: justify;
 }
 
-/* CSS for admin page */
-#pageJumpDiv {
-    background: #f0f4ff;
-    /* light background */
-    padding: 1em;
-    border: 2px solid #0a2f7d;
-    border-radius: 8px;
-    width: 100%;
-    /* fixed menu width */
-}
-
-#pageJumpDiv ul {
-    color: rgb(0, 0, 153);
-    font-weight: bold;
-    margin-top: 0.3em;
-    list-style: none;
-    /* remove bullets */
-    padding: 0;
-    margin: 0;
-}
-
-#pageJumpDiv li {
-    margin-bottom: 0.5em;
-}
-
-#pageJumpDiv a {
-    text-decoration: none;
-    color: white;
-    margin: 0em;
-    font-size: 1em;
-    display: block;
-    background: #0a2f7d;
-    padding: 8px 12px;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
-
-#pageJumpDiv a:hover {
-    text-decoration: underline;
-    /* underline on hover */
-    text-decoration-thickness: 2px;
-    /* makes it thicker */
-    text-underline-offset: 4px;
-    /* moves underline down */
-    text-decoration-color: red;
-    /* make underline red */
-}
-
 /* CSS for Responsive Desgin */
 /*Hide the hamburger icon in big screens (Laptop & Large Display)*/
 .hamburger-menu {

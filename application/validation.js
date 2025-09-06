@@ -64,10 +64,7 @@ function validate_form2(theForm) {
     return false;
   }
   //validate address 2 if it is not empty
-  else if (
-    !isValid(theForm.address2.value, adderessReEx) &&
-    !isEmpty(theForm.address2.value)
-  ) {
+  else if (!isValid(theForm.address2.value, adderessReEx) && !isEmpty(theForm.address2.value)) {
     alert("Error: You must provide valid Address Line 2!");
     theForm.address2.focus();
     return false;

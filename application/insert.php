@@ -79,9 +79,8 @@ try {
         ':declaration'    => $declaration,
     ]);
 
-     $_SESSION['id'] = $pdo->lastInsertId();
-    $_SESSION['startFlag'] = "Yes";
-
+    $_SESSION['id'] = $pdo->lastInsertId();
+  
     // show the confirmation page
     require __DIR__ . '/display.php';
 

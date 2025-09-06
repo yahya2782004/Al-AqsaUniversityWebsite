@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Alaqsa University</title>
 	<meta name="keywords" content="alaqsa university, undergraduate, postgraduate, registration">
 	<meta name="description" content="Alaqsa University web site">
-	<link rel="stylesheet" href="css/stylesheet.css" title="default">
-	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<link rel="stylesheet" href="../css/stylesheet.css" title="default">
+	<link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 </head>
 
 <body>
-	<?php include('application/appHeader.php'); ?>
+	<?php include('appHeader.php'); ?>
 
 		<div style= "margin-bottom: 5em;" class="appContainerDiv">
 			<div class="appNavDiv">
@@ -39,8 +38,8 @@
 
 		</div>
 
-
-	<?php include __DIR__ . '/partials/footer.php'; ?>
+<?php include('../partials/footer.php'); ?>
+	
 
 </body>
 

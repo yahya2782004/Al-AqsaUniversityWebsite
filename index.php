@@ -1,26 +1,31 @@
 <?php
 //Handling Dynammic webpages
 $allowed_pages = [
-    'home'                      => 'body_index.php',
+    'body_index'                => 'body_index.php',
+    'body_aboutUs'              => 'body_aboutUs.php',
+    'body_undergraduate'        => 'body_undergraduate.php',
+    'body_postgraduate'         => 'body_postgraduate.php',
     'registration_howToApply'   => 'registration_howToApply.php',
-    'registration_tuitionFees'  => 'registration_tuitionFees.php',
+    'body_contactUs'            => 'body_contact.php',
+    'body_Accessibility'        => 'body_Accessibility.php',
+    'body_privacy'              => 'body_privacy.php',
     'registration_AZcourses'    => 'registration_AZcourses.php',
+    'registration_tuitionFees'  => 'registration_tuitionFees.php',
     'registration_enquiries'    => 'registration_enquiries.php',
-    'contact'                   => 'body_contact.php'
+    'body_404'                  => 'body_404.php' // add 404 page
 ];
-//get the page name
+
 $p = $_GET['page'] ?? 'body_index'; //home is the default
 
-//check if it is one of allowed files
-if (array_key_exists($p, $allowed_pages)) {
-    $page_file = $allowed_pages[$p];
-} else {
-    $page_file = 'body_404.php';
+//print_r($_GET);
+if (!array_key_exists($p, $allowed_pages)) {
+    $p='body_404';
 }
 ?>
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -28,32 +33,28 @@ if (array_key_exists($p, $allowed_pages)) {
     <meta name="keywords" content="alaqsa university, undergraduate, postgraduate, registration">
     <meta name="description" content="Alaqsa University web site">
     <link rel="stylesheet" href="css/stylesheet.css" title="default">
-    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 
 <body>
 
-    <!-- Header Section -->
     <?php include __DIR__ . '/partials/header.php'; ?>
 
-    <!-- Hero Section (banner or main visual) -->
     <?php include __DIR__ . '/partials/hero.php'; ?>
 
-    <!-- Body Content -->
-
-    <?php
-    // Check if the requested file physically exists
+    <?php 
+    
     if (file_exists($p . '.php')) {
-        include($p . '.php');
+        include($p . '.php'); 
     } 
     else {
-        include('body_index.php');
+        include('body_404.php');
     } 
     ?>
 
-    <!-- Footer Section -->
     <?php include __DIR__ . '/partials/footer.php'; ?>
 
 </body>
+
 </html>
+

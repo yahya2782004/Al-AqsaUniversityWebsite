@@ -13,7 +13,7 @@
   </div>
 
   <div class="appBodyDiv">
-    <form name="form5" action="../insert.php" method="post" onSubmit="return validate_form5(form5);">
+    <form name="form5" action="insert.php" method="post" onSubmit="return validate_form5(form5);">
 
       <strong>5. Application Review</strong>
 
